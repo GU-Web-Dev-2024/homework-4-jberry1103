@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        header {
+            background-color:  rgb(235, 117, 21);
+            height: 50px;
+            top: 0px; 
+            width: auto;
+        }
+        header p {
+            color: white;
+            text-align: center;
+            font-size: 30px;  
+            
+        }
+        
+        .candies {
+            display: flex;
+            flex: 50%;
+            flex-wrap: wrap;
+            top: 100px;
+            flex: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 50px;
+            align-items: center;
+        }
+        .photo {
+            padding: 20px;
+            border: 5px solid rgb(235, 117, 21);
+            border-radius: 10%;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(92, 92, 92);
+            justify-content: space-around;
+            align-items: center;
+            color: orange;
+        }
+
+       
+
+
+        .photo img {
+            width: 100px;
+            height: 100px; 
+            margin-left: 19%;
+            align-self: center;
+            
+            
+        }
+
+        
+        .photo p {
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(60, 60, 60);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .value {
+           margin-top: 30px;
+        }
+        
+        footer {
+            background-color:  rgb(235, 117, 21);
+            height: 50px;
+            top: 0px; 
+            width: auto;
+            
+        }
+        footer p {
+            color: white;
+            text-align: center;
+            font-size: 30px;  
+        }
+
+        .photo:hover  {
+            background-color: orange;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <section> 
+        <header> 
+            <p> Trick-or-Treat Candy Collection </p>
+        </header>
+    </section>
+    <section class = "value"> 
+        <div class = "candies">
+            <div class="photo">
+                <img src="snickers.jpg" alt="Snickers" class="snickers">
+                <p>
+                    Snickers
+                </p>
+            </div>
+            <div class="photo">
+                <img src="Candy-Corn.jpg" alt="Candy Corn" class="candy-corn">
+                <p>
+                    Candy Corn
+                </p>
+            </div>
+            <div class="photo">
+                <img src="M&M.jpg" alt="M and M" class="mnm">
+                <p>
+                    M&M
+                </p>
+            </div>
+            <div class="photo">
+                <img src="skittles.jpg" alt="skittles">
+                <p>
+                    Skittles
+                </p>
+            </div>
+            <div class="photo">
+                <img src="sourpatch.jpg" alt="sour patch kids">
+                <p>
+                    Sour Patch Kids
+                </p>
+            </div>
+            <div class="photo">
+                <img src="gummyworms.jpg" alt="skittles">
+                <p>
+                    Gummy Worms
+                </p>
+            </div>
+            
+            
+        </div>
+    </section>
+    <footer> 
+        <p>Happy Halloween </p>
+    </footer>
+</body>
+</html>
