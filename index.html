@@ -23,7 +23,7 @@
             flex: 50%;
             flex-wrap: wrap;
             top: 100px;
-            flex: center;
+
             justify-content: space-between;
             gap: 10px;
             padding: 50px;
@@ -39,8 +39,8 @@
             justify-content: space-around;
             align-items: center;
             color: orange;
-            flex: .5, 150px;
             transition: 1s;
+            
            
             
         }
@@ -87,11 +87,11 @@
         }
 
         @keyframes move {
-            0%, 100%, 20%, 50%, 80% { transform: translateY(0); }   
+            0%, 100%, 20%, 50%, 80% { transform: translateY(0);}   
             40% { transform: translateY(-30px);
                 transform: translateY(-30px); 
-                transform: translateY(-30px); } 
-            60% { transform: translate (0); } 
+                transform: translateY(-30px);} 
+            60% { transform: translateY(0);} 
              
         }
 
@@ -109,7 +109,7 @@
             <p> Trick-or-Treat Candy Collection </p>
         </header>
     </section>
-    <section class = "value"> 
+    <section> 
         <div class = "candies-box">
             <div class="candy-box" id = "snickers">
                 <img src="snickers.jpg" alt=".candy-box" class=".candy-box" >
@@ -147,8 +147,6 @@
                     Gummy Worms
                 </p>
             </div>
-            
-            
         </div>
     </section>
     <footer> 
