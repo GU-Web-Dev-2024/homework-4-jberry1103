@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Development - HW4 by Jillian Berry</title>
     <style> 
         header {
             background-color:  rgb(235, 117, 21);
@@ -15,10 +15,10 @@
             color: white;
             text-align: center;
             font-size: 30px;  
-            
+            margin: 1px;
         }
         
-        .candies {
+        .candies-box {
             display: flex;
             flex: 50%;
             flex-wrap: wrap;
@@ -29,7 +29,7 @@
             padding: 50px;
             align-items: center;
         }
-        .photo {
+        .candy-box {
             padding: 20px;
             border: 5px solid rgb(235, 117, 21);
             border-radius: 10%;
@@ -39,12 +39,17 @@
             justify-content: space-around;
             align-items: center;
             color: orange;
+            flex: .5, 150px;
+            transition: 1s;
+           
+            
         }
+        
 
        
+        
 
-
-        .photo img {
+        .candy-box img {
             width: 100px;
             height: 100px; 
             margin-left: 19%;
@@ -54,13 +59,13 @@
         }
 
         
-        .photo p {
+        .candy-box p {
             text-align: center;
         }
 
         body {
             background-color: rgb(60, 60, 60);
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            font-family: Arial, Helvetica, sans-serif;
         }
         .value {
            margin-top: 30px;
@@ -70,18 +75,31 @@
             background-color:  rgb(235, 117, 21);
             height: 50px;
             top: 0px; 
-            width: auto;
+            width: auto; 
             
+                    
         }
+        
         footer p {
             color: white;
             text-align: center;
-            font-size: 30px;  
+            font-size: 30px;
         }
 
-        .photo:hover  {
+        @keyframes move {
+            0%, 100%, 20%, 50%, 80% { transform: translateY(0); }   
+            40% { transform: translateY(-30px);
+                transform: translateY(-30px); 
+                transform: translateY(-30px); } 
+            60% { transform: translate (0); } 
+             
+        }
+
+        .candy-box:hover  {
             background-color: orange;
             color: black;
+            animation-name: move;
+            animation-duration: 1s;            
         }
     </style>
 </head>
@@ -92,38 +110,38 @@
         </header>
     </section>
     <section class = "value"> 
-        <div class = "candies">
-            <div class="photo">
-                <img src="snickers.jpg" alt="Snickers" class="snickers">
+        <div class = "candies-box">
+            <div class="candy-box" id = "snickers">
+                <img src="snickers.jpg" alt=".candy-box" class=".candy-box" >
                 <p>
                     Snickers
                 </p>
             </div>
-            <div class="photo">
+            <div class="candy-box">
                 <img src="Candy-Corn.jpg" alt="Candy Corn" class="candy-corn">
                 <p>
                     Candy Corn
                 </p>
             </div>
-            <div class="photo">
-                <img src="M&M.jpg" alt="M and M" class="mnm">
+            <div class="candy-box">
+                <img src="M&M.jpg" alt="M and M" >
                 <p>
                     M&M
                 </p>
             </div>
-            <div class="photo">
+            <div class="candy-box">
                 <img src="skittles.jpg" alt="skittles">
                 <p>
                     Skittles
                 </p>
             </div>
-            <div class="photo">
+            <div class="candy-box">
                 <img src="sourpatch.jpg" alt="sour patch kids">
                 <p>
                     Sour Patch Kids
                 </p>
             </div>
-            <div class="photo">
+            <div class="candy-box">
                 <img src="gummyworms.jpg" alt="skittles">
                 <p>
                     Gummy Worms
