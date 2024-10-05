@@ -1,3 +1,10 @@
+<!-- 
+   Name: Jillian Berry
+   Class Name: CPSC 322 - Web Development
+   Assignment Name: Homeowrk 4
+   Last Modified: 10/4/2024
+   I am attempted the extra credit.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,19 +12,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development - HW4 by Jillian Berry</title>
     <style> 
+        /* This is meant to style the header by changing the color to orange, setting the size of the header, 
+        and setting the location of the header. */
         header {
             background-color:  rgb(235, 117, 21);
             height: 50px;
             top: 0px; 
             width: auto;
         }
+        /* This is meant to style the p tag in header should be white, should be in the center, the font size is set, and the margin is 1px.  */
         header p {
             color: white;
             text-align: center;
             font-size: 30px;  
             margin: 1px;
         }
-        
+        /* This is the main flexbox which sets the shape of the candies and it being flexible when screen size is changed, and sets the basic spacing features. */
         .candies-box {
             display: flex;
             flex: 50%;
@@ -29,27 +39,23 @@
             padding: 50px;
             align-items: center;
         }
-        .candy-box {
+        
+        /* For the snickers, this sets the values for the snickers box including the border, standard background color, text color, transitions, 
+        and size of the box. */
+        .snickers {
             padding: 20px;
             border: 5px solid rgb(235, 117, 21);
             border-radius: 10%;
-            width: 150px;
-            height: 150px;
             background-color: rgb(92, 92, 92);
             justify-content: space-around;
             align-items: center;
             color: orange;
             transition: 1s;
-            
-           
-            
-        }
-        
+            flex: 0 0 150px;
+        }  
 
-       
-        
-
-        .candy-box img {
+        /* This sets the img for snickers including the size, location in the box, and location of the image. */
+        .snickers img {
             width: 100px;
             height: 100px; 
             margin-left: 19%;
@@ -57,35 +63,164 @@
             
             
         }
-
-        
-        .candy-box p {
+        /* This sets the value of the p tag to the center of snickers box. */
+        .snickers p {
             text-align: center;
         }
+        /* For the candy-corn, this sets the values for the candy-corn box including the border, standard background color, text color, transitions, 
+        and size of the box. */ 
+        .candy-corn {
+            padding: 20px;
+            border: 5px solid rgb(235, 117, 21);
+            border-radius: 10%;
+            background-color: rgb(92, 92, 92);
+            justify-content: space-around;
+            align-items: center;
+            color: orange;
+            transition: 1s;
+            flex: 0 0 150px;
+        }  
 
+        /* This sets the img for candy-corn including the size, location in the box, and location of the image.*/
+        .candy-corn img {
+            width: 100px;
+            height: 100px; 
+            margin-left: 19%;
+            align-self: center; 
+        }
+
+        /* This sets the value in the p tage in candy corn to be in the center of the box. */
+        .candy-corn p {
+            text-align: center;
+        }
+        /* For the M-and-M, this sets the values for the M-and-M box including the border, standard background color, text color, transitions, 
+        and size of the box. */ 
+        .M-and-M {
+            padding: 20px;
+            border: 5px solid rgb(235, 117, 21);
+            border-radius: 10%;
+            background-color: rgb(92, 92, 92);
+            justify-content: space-around;
+            align-items: center;
+            color: orange;
+            transition: 1s;
+            flex: 0 0 150px;
+        }  
+
+        /* This sets the img for M-and-M including the size, location in the box, and location of the image.*/
+        .M-and-M img {
+            width: 100px;
+            height: 100px; 
+            margin-left: 19%;
+            align-self: center;
+            
+            
+        }
+        /* This sets the value in the p tage in M-and-M to be in the center of the box. */
+        .M-and-M p {
+            text-align: center;
+        }
+        /* For the skittles, this sets the values for the M-and-M box including the border, standard background color, text color, transitions, 
+        and size of the box. */ 
+        .skittles {
+            padding: 20px;
+            border: 5px solid rgb(235, 117, 21);
+            border-radius: 10%;
+            background-color: rgb(92, 92, 92);
+            justify-content: space-around;
+            align-items: center;
+            color: orange;
+            transition: 1s;
+            flex: 0 0 150px;
+        }  
+
+        /* This sets the img for skittles including the size, location in the box, and location of the image.*/
+        .skittles img {
+            width: 100px;
+            height: 100px; 
+            margin-left: 19%;
+            align-self: center;
+            
+            
+        }
+        /* This sets the value in the p tage in skittles to be in the center of the box. */
+        .skittles p {
+            text-align: center;
+        }
+        /* For the sour patch kids, this sets the values for the sour patch box including the border, standard background color, text color, transitions, 
+        and size of the box. */ 
+        .sour-patch-kids {
+            padding: 20px;
+            border: 5px solid rgb(235, 117, 21);
+            border-radius: 10%;
+            background-color: rgb(92, 92, 92);
+            justify-content: space-around;
+            align-items: center;
+            color: orange;
+            transition: 1s;
+            flex: 0 0 150px;
+        }  
+
+        /* This sets the img for sour patch kids including the size, location in the box, and location of the image.*/
+        .sour-patch-kids img {
+            width: 100px;
+            height: 100px; 
+            margin-left: 19%;
+            align-self: center;
+            
+            
+        }
+        /* This sets the value in the p tage in sour patch kids to be in the center of the box. */
+        .sour-patch-kids p {
+            text-align: center;
+        }
+        /* For the gummy worms, this sets the values for the gummy worms box including the border, standard background color, text color, transitions, 
+        and size of the box. */ 
+        .gummy-worms {
+            padding: 20px;
+            border: 5px solid rgb(235, 117, 21);
+            border-radius: 10%;
+            background-color: rgb(92, 92, 92);
+            justify-content: space-around;
+            align-items: center;
+            color: orange;
+            transition: 1s;
+            flex: 0 0 150px;
+        }  
+
+         /* This sets the img for gummy worms including the size, location in the box, and location of the image.*/
+        .gummy-worms img {
+            width: 100px;
+            height: 100px; 
+            margin-left: 19%;
+            align-self: center;
+            
+            
+        }
+        /* This sets the value in the p tage in gymmy worms to be in the center of the box. */
+        .gummy-worms p {
+            text-align: center;
+        }
+        /* This sets the background-color and the text to a safe color. */
         body {
             background-color: rgb(60, 60, 60);
             font-family: Arial, Helvetica, sans-serif;
         }
-        .value {
-           margin-top: 30px;
-        }
-        
+        /*This is the design for the background color and size of the footer.*/
         footer {
             background-color:  rgb(235, 117, 21);
             height: 50px;
             top: 0px; 
-            width: auto; 
-            
-                    
+            width: auto;         
         }
-        
+        /*This is the value in p tag in the footer which defines the text size, color, and location.*/
         footer p {
             color: white;
             text-align: center;
             font-size: 30px;
         }
-
+        
+        /*This defines the movement of the boxes in the flex box to bounce up and down.*/
         @keyframes move {
             0%, 100%, 20%, 50%, 80% { transform: translateY(0);}   
             40% { transform: translateY(-30px);
@@ -94,12 +229,51 @@
             60% { transform: translateY(0);} 
              
         }
-
-        .candy-box:hover  {
+        /* When the cursor hovers on the snickers box, the color changes and the box bounces*/
+        .snickers:hover  {
             background-color: orange;
             color: black;
             animation-name: move;
             animation-duration: 1s;            
+        }
+        /* When the cursor hovers on the candy-corn box, the color changes and the box bounces*/
+        .candy-corn:hover  {
+            background-color: orange;
+            color: black;
+            animation-name: move;
+            animation-duration: 1s;            
+        }
+        /* When the cursor hovers on the M-and-M box, the color changes and the box bounces*/
+        .M-and-M:hover  {
+            background-color: orange;
+            color: black;
+            animation-name: move;
+            animation-duration: 1s;            
+        }
+        /* When the cursor hovers on the skittles box, the color changes and the box bounces*/
+        .skittles:hover  {
+            background-color: orange;
+            color: black;
+            animation-name: move;
+            animation-duration: 1s;            
+        }
+        /* When the cursor hovers on the sour patch kids box, the color changes and the box bounces*/
+        .sour-patch-kids:hover  {
+            background-color: orange;
+            color: black;
+            animation-name: move;
+            animation-duration: 1s;            
+        }
+        /* When the cursor hovers on the gummy worms box, the color changes and the box bounces*/
+        .gummy-worms:hover  {
+            background-color: orange;
+            color: black;
+            animation-name: move;
+            animation-duration: 1s;            
+        }
+        /*This is the color of the h2 tag in the flex container.*/
+        .flex-container h2 {
+            color: rgb(60, 60, 60);
         }
     </style>
 </head>
@@ -109,39 +283,40 @@
             <p> Trick-or-Treat Candy Collection </p>
         </header>
     </section>
-    <section> 
+    <section class = flex-container> 
+        <h2> Candy Section </h2>
         <div class = "candies-box">
-            <div class="candy-box" id = "snickers">
-                <img src="snickers.jpg" alt=".candy-box" class=".candy-box" >
+            <div class="snickers" id = "snickers">
+                <img src="snickers.jpg" alt="Snickers"  >
                 <p>
                     Snickers
                 </p>
             </div>
-            <div class="candy-box">
-                <img src="Candy-Corn.jpg" alt="Candy Corn" class="candy-corn">
+            <div class= "candy-corn">
+                <img src="Candy-Corn.jpg" alt="Candy Corn">
                 <p>
                     Candy Corn
                 </p>
             </div>
-            <div class="candy-box">
+            <div class="M-and-M">
                 <img src="M&M.jpg" alt="M and M" >
                 <p>
                     M&M
                 </p>
             </div>
-            <div class="candy-box">
+            <div class="skittles">
                 <img src="skittles.jpg" alt="skittles">
                 <p>
                     Skittles
                 </p>
             </div>
-            <div class="candy-box">
+            <div class="sour-patch-kids">
                 <img src="sourpatch.jpg" alt="sour patch kids">
                 <p>
                     Sour Patch Kids
                 </p>
             </div>
-            <div class="candy-box">
+            <div class="gummy-worms">
                 <img src="gummyworms.jpg" alt="skittles">
                 <p>
                     Gummy Worms
@@ -150,7 +325,7 @@
         </div>
     </section>
     <footer> 
-        <p>Happy Halloween </p>
+        <p>Happy Halloween! </p>
     </footer>
 </body>
 </html>
