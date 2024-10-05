@@ -20,8 +20,8 @@
             top: 0px; 
             width: auto;
         }
-        /* This is meant to style the h1 in header should be white, should be in the center, the font size is set, and the margin is 1px.  */
-        header h1 {
+        /* This is meant to style the p in header should be white, should be in the center, the font size is set, and the margin is 1px.  */
+        header p {
             color: white;
             text-align: center;
             font-size: 30px;  
@@ -214,7 +214,7 @@
             width: auto;         
         }
         /*This is the value in p tag in the footer which defines the text size, color, and location.*/
-        footer h1 {
+        footer p {
             color: white;
             text-align: center;
             font-size: 30px;
@@ -278,44 +278,58 @@
     </style>
 </head>
 <body>
-    <section> 
+    <div> 
+        <!-- This holds the header which lays at the top of the page.-->
         <header> 
-            <h1> Trick-or-Treat Candy Collection </h1>
+            <p>Trick-or-Treat Candy Collection</p>
         </header>
-    </section>
+    </div>
+    <!-- The flex container wraps based on the size of the page.-->
     <section class = flex-container> 
         <h2> Candy Section </h2>
         <div class = "candies-box">
+            <!-- These contain all the boxes which hold a picture and candy in 
+             the flex box-->
             <div class="snickers" id = "snickers">
                 <img src="snickers.jpg" alt="Snickers"  >
                 <p>
                     Snickers
                 </p>
             </div>
+             <!-- These contain all the boxes which hold a picture and candy in 
+             the flex box-->
             <div class= "candy-corn">
                 <img src="Candy-Corn.jpg" alt="Candy Corn">
                 <p>
                     Candy Corn
                 </p>
             </div>
+             <!-- These contain all the boxes which hold a picture and candy in 
+             the flex box-->
             <div class="M-and-M">
                 <img src="M&M.jpg" alt="M and M" >
                 <p>
                     M&M
                 </p>
             </div>
+             <!-- These contain all the boxes which hold a picture and candy in 
+             the flex box-->
             <div class="skittles">
                 <img src="skittles.jpg" alt="skittles">
                 <p>
                     Skittles
                 </p>
             </div>
+             <!-- These contain all the boxes which hold a picture and candy in 
+             the flex box-->
             <div class="sour-patch-kids">
                 <img src="sourpatch.jpg" alt="sour patch kids">
                 <p>
                     Sour Patch Kids
                 </p>
             </div>
+             <!-- These contain all the boxes which hold a picture and candy in 
+             the flex box-->
             <div class="gummy-worms">
                 <img src="gummyworms.jpg" alt="skittles">
                 <p>
@@ -325,7 +339,7 @@
         </div>
     </section>
     <footer> 
-        <h1>Happy Halloween! </h1>
+        <p>Happy Halloween! </p>
     </footer>
 </body>
 </html>
